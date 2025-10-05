@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>RPG.INFO 이용약관</title>
+  <meta name="description" content="RPG.INFO 앱의 이용약관 (Terms of Service)" />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="icon" href="rpginfo.png" />
+  <style>
+    :root {
+      --bg:#0f172a; --text:#e5e7eb; --muted:#9ca3af; 
+      --accent:#818cf8; --border:#1f2937; --link:#93c5fd;
+    }
+    body {
+      margin:0; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Noto Sans KR', sans-serif;
+      background:linear-gradient(180deg,var(--bg),#111827 60%);
+      color:var(--text); line-height:1.7;
+    }
+    .container {max-width:880px; margin:0 auto; padding:24px 16px 80px;}
+    header {display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin:12px 0 24px;}
+    .logo {width:40px; height:40px; border-radius:10px; overflow:hidden;}
+    .logo img {width:100%; height:100%; object-fit:cover;}
+    h1 {font-size:24px; margin:0;}
+    .badge {font-size:12px; background:#e5e7eb; color:#111827; border-radius:999px; padding:2px 10px; margin-left:auto;}
+    article {background:rgba(255,255,255,0.02); border:1px solid var(--border); border-radius:16px;}
+    section {padding:24px 20px; border-top:1px solid var(--border);}
+    section:first-child{border-top:0}
+    h2{font-size:18px;margin:0 0 10px;color:#fff}
+    p,li{word-break:keep-all}
+    ul{margin:8px 0 8px 18px}
+    li{margin:6px 0}
+    .muted{color:var(--muted)}
+    footer{text-align:center;color:var(--muted);margin-top:22px;font-size:14px}
+    @media(max-width:600px){
+      .container{padding:16px 12px 60px;}
+      h1{font-size:22px;}
+      p,li{font-size:15px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"><img src="rpginfo.png" alt="RPG.INFO 로고"></div>
+      <div>
+        <h1>RPG.INFO 이용약관</h1>
+        <div class="muted">시행일: <time datetime="2025-10-06">2025년 10월 6일</time> · 버전 1.0</div>
+      </div>
+      <span class="badge">Terms of Service</span>
+    </header>
+
+    <article>
+      <section>
+        <h2>1. 목적</h2>
+        <p>이 약관은 EpicTrace(이하 “회사”)가 제공하는 RPG.INFO 서비스의 이용 조건과 절차, 권리·의무 및 기타 필요한 사항을 규정함을 목적으로 합니다.</p>
+      </section>
+
+      <section>
+        <h2>2. 용어 정의</h2>
+        <ul>
+          <li>“서비스”란 RPG.INFO 앱 및 관련 웹사이트 등 회사가 제공하는 모든 콘텐츠를 말합니다.</li>
+          <li>“이용자”란 본 약관에 따라 서비스를 이용하는 모든 개인 또는 단체를 의미합니다.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. 약관의 효력 및 변경</h2>
+        <p>회사는 필요 시 약관을 변경할 수 있으며, 변경 시 앱 내 공지사항 또는 웹페이지를 통해 고지합니다. 변경된 약관은 게시 후 효력이 발생합니다.</p>
+      </section>
+
+      <section>
+        <h2>4. 서비스의 제공 및 변경</h2>
+        <p>회사는 서비스를 안정적으로 제공하기 위해 최선을 다하나, 기술적 문제 또는 불가피한 사유로 서비스의 일부 또는 전부가 변경되거나 중단될 수 있습니다.</p>
+      </section>
+
+      <section>
+        <h2>5. 이용자의 의무</h2>
+        <ul>
+          <li>법령 및 약관, 공지사항 준수</li>
+          <li>타인의 개인정보 도용 금지</li>
+          <li>서비스를 비정상적인 방법으로 이용하지 않을 것</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. 면책사항</h2>
+        <p>회사는 천재지변, 통신장애, 서비스 제공업체의 오류 등 불가항력적 사유로 발생한 피해에 대해 책임을 지지 않습니다.</p>
+      </section>
+
+      <section>
+        <h2>7. 관할 법원</h2>
+        <p>서비스 이용과 관련하여 분쟁이 발생한 경우, 대한민국 법을 준거법으로 하며 회사 소재지 관할 법원을 제1심 관할 법원으로 합니다.</p>
+      </section>
+    </article>
+
+    <footer>
+      <p>© <span id="y"></span> EpicTrace. All rights reserved.</p>
+      <p class="muted">본 페이지는 GitHub Pages 로 서비스됩니다.</p>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
