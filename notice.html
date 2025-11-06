@@ -30,6 +30,44 @@
       margin: 12px 0 0;
       color: #1e40af;
     }
+    nav {
+      position: fixed;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%) translateX(12px);
+      width: 180px;
+      background: rgba(0, 4, 51, 0.75);
+      color: #eef2ff;
+      padding: 10px 12px;
+      border-radius: 12px;
+      z-index: 100;
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      opacity: 0;
+      pointer-events: none;
+      font-size: 13px;
+      line-height: 1.4;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 6px 18px rgba(2,6,23,0.35);
+    }
+    nav.visible {
+      opacity: 1;
+      transform: translateY(-50%) translateX(0);
+      pointer-events: auto;
+    }
+    nav a {
+      display: block;
+      color: #e6eef8;
+      margin: 6px 0;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffffff;
+    }
+    @media (max-width: 880px) {
+      nav { display: none; }
+    }
     .notice-card {
       background: white;
       width: 100%;
@@ -91,8 +129,25 @@
     <h1>공지사항</h1>
   </header>
 
+  <nav>
+    <a href="#version_1.0.1">버전 1.0.1</a>
+    <a href="#version_1.0.0">버전 1.0.0</a>
+    <a href="#developList">추후 개발 리스트</a>
+  </nav>
+
   <div class="notice-card">
-    <div class="version-title">📢 버전 1.0.0 (정식 배포)</div>
+    <div id="version_1.0.1" class="version-title">🚀 버전 1.0.1</div>
+    <div class="notice-section">
+      <h2>1. 수정 사항</h2>
+      <ul>
+        <li>캐릭터 저장 후 업데이트 개선</li>
+        <li>앱 안정성 및 성능 개선</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="notice-card">
+    <div id="version_1.0.0" class="version-title">📢 버전 1.0.0 (정식 배포)</div>
 
     <div class="notice-section">
       <h2>1. 게임 정보</h2>
@@ -135,7 +190,7 @@
   </div>
   
   <div class="notice-card">
-    <div class="version-title">🛠️ 추후 개발 리스트</div>
+    <div id="developList" class="version-title">🛠️ 추후 개발 리스트</div>
     
     <div class="notice-section">
       <h2>1. 메이플스토리</h2>
